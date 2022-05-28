@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <style>
+        .main-content {
+            min-height: 1000px;
+            width: 90%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 300px 700px;
+            
+        }
+        .left-section {
+            grid-column: span 1;
+            background-color: black;
+        }
+        .right-section {
+            grid-column: span 1 / span 2;
+            
+        }
+        .left-content {
+            padding: 1rem;
+        }
+        .profile-image {
+            display: block;
+            margin: auto;
+            border: 5px;
+            border-radius: 30%;
+            width: 60%;
+        }
+        .name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-align: center;
+            padding-left: 0.8rem;
+            padding-left: 0.8rem;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.02px;
+            color: white;
+        }
+        .designation {
+            font-size: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: 0.5rem;
+            color: white;
+        }
+        .description {
+            font-size: 0.75rem;
+            text-align: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            color: white;
+        }
+        .skill-title {
+            font-size: 0.75rem;
+            text-align: center;
+            text-transform: uppercase;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            color: white;
+        }
+        .skill-name {
+            font-size: 0.65rem;
+            font-weight: 0.65rem;
+            text-align: left;
+            padding-bottom: 0.5rem;
+            color: white;
+        }
+        .progress-bar {
+            border: 1px white solid;
+            height: 4px;
+            background-color: white;
+            border-radius: 10px;
+        }
+            .personal-details {
+            color: white;
+        }
+        .social-media {
+            display: block;
+            margin: auto;
+            border: 5px;
+            width: 10%;
+        }
+        .right-section{
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            padding-right: 3rem;
+            padding-left: 3rem;
+        }
+        .right-title{
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 0.5rem;
+            letter-spacing: 1px;
+        }
+        @media screen and (max-width: 673px)
+        .main-content {
+            grid-template-columns: repeat(1, 1fr);
+        }
+       
+    </style>
+</head>
+<body>
+     <main class="main-content">
+        <section class="left-section">
+          <div class="left-content">
+              <div class="profile-details">
+                  <div class="profile">
+                      <img class="profile-image" src="data:image/jpeg;base64,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" alt="Profile">
+                  </div>
+                  <h2 class="name">Vikas Sharma</h2>
+                  <h4 class="designation">Web Devloper</h4>
+                  <hr>
+                  <p class="description">Merrn Stack Devloper | Full Stack Devloper</p>
+              </div>
+              <div class="contact-info">
+                  <div class="contact-item">
+                      <div class="social-media">
+                          <li class="icon"></li>
+                          <li class="icon"></li>
+                          <li class="icon"></li>
+                          <li class="icon"></li>
+                      </div>
+                      <div class="personal-details">
+                        <li class="icon">hivikas786@gmai.com</li>
+                        <li class="icon">+91 9111901809</li>
+                        <li class="icon">Ujjain Road, Indore (M.P.)</li>
+                    </div>
+                </div>
+              </div>
+              <div class="skills">
+                  <h2 class="skills-title">Skills</h2>
+                  <div class="skills-content">
+                      <div class="skill-item">
+                          <div class="skill-name">
+                              <h3>HTML</h3>
+                          </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" style="width:90%"></div>
+                        </div>
+                      </div>
+                      <div class="skill-item">
+                        <div class="skill-name">
+                            <h3>CSS</h3>
+                        </div>
+                      <div class="skill-progress">
+                          <div class="progress-bar" style="width:80%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <h3>JAVASCRIPT</h3>
+                        </div>
+                      <div class="skill-progress">
+                          <div class="progress-bar" style="width:70%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <h3>JAVA</h3>
+                        </div>
+                      <div class="skill-progress">
+                          <div class="progress-bar" style="width:60%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <h3>NODEJS</h3>
+                        </div>
+                      <div class="skill-progress">
+                          <div class="progress-bar" style="width:50%"></div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </section>
+        <section class="right-section">
+            <div class="right-main-content">
+                <section class="about sect">
+                    <h2 class="right-title">About Me</h2>
+                    <p class="para">My name is Vikas Sharma, I completed my study from Swami Vivekanand College of Engg. Indore in Mechanical specialization. After completing my graduation, I got interest in websites and its devlopment part, so I decided to build my career in website devlopment. Now, I am student at Newton school's February batch.
+                    </p>
+                </section>
+                <section class="eduacation sect">
+                    <h2 class="right-title">Education</h2>
+                    <div class="education-content">
+                        <h4>Bachelors in SVCE Indore</h4>
+                        <p>I complete my graduation in SVCE Indore from 2016 to 2020. I did Bbachelor of Engineering in Mechanical branch</p>
+                    </div>
+                </section>
+                <section class="exeperince sect">
+                    <h2 class="right-title">Experince</h2>
+                    <div class="experince-content">
+                        <h4>FreeLancer</h4>
+                        <p>I have an exeperience in freelancing of 1 years. I gave services to my clients at right time with good quality.</p>
+                    </div>
+                </section>
+                <section class="project sect">
+                    <h2 class="right-title">Projects</h2>
+                    <div class="project-content">
+                        <h4>My Portfolio</h4>
+                        <p>I made a portfolio using CSS and HTML. I wright all the code using proper tags. I made neat and clean code.</p>
+                        <h4>TshirtStupid.tk website</h4>
+                        <p>It is an ecommerce website with functionality of choosing product, varients, and then checkout by any payment method.</p>
+                    </div>
+                </section>
+            </div>
+
+        </section>
+        </section>
+     </main>
+</body>
+</html>
