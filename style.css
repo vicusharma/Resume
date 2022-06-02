@@ -1,0 +1,42 @@
+.main-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.left-section{
+    background-color: white;
+     
+}
+.image{
+    height: 600px;
+}
+.right-section{
+    background-color: white;
+    height: 700px;
+    width: 500px;
+    padding: 10px;
+}
+.right-content{
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.name{
+    font-size: larger;
+    font-weight: bold;
+}
+.occupation{
+    font-weight: bold;
+    font-size: small;
+}
+.contact{
+    font-weight: bold;
+}
+.social-media{
+    display: flex;
+    
+    
+}
+.icon{
+    height: 30px;
+    margin: 20px;
+}
